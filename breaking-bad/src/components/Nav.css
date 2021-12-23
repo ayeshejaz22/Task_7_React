@@ -90,6 +90,8 @@
   justify-content: center; */
   border-radius: 120%;
   box-shadow: 0 5px 10px #838587;
+  width: 100px;
+  height: 100px;
 }
 
 .card-header {
@@ -116,11 +118,16 @@
   padding: 10px;
 }
 
-.description h3 {
+.description h5 {
   margin: 0;
   padding: 0;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+.description p {
+  font-style: italic;
 }
 
 .desc {
@@ -129,7 +136,9 @@
   padding-top: 10px;
 }
 
-.date {
+.occupation {
+  padding: 10px;
+  text-align: center;
   font-style: italic;
 }
 

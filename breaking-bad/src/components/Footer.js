@@ -1,25 +1,31 @@
 import React from "react";
 import Nav from "./Nav.css";
+import Characters from "../FooterComponents/Characters";
+import Episodes from "../FooterComponents/Episodes";
+import Quotes from "../FooterComponents/Quotes";
+import DeathCount from "../FooterComponents/DeathCount";
 
-const Footer = (props) => {
-  return (
-    <div className="section-footer">
-      <div className="footer">
-        <div className="footer-title">
-          <h2>Characters: {props.footerInfo}</h2>
-        </div>
-        <div className="footer-title">
-          <h2>Episodes: {props.footerInfo} </h2>
-        </div>
-        <div className="footer-title">
-          <h2>Quotes: {props.footerInfo}</h2>
-        </div>
-        <div className="footer-title">
-          <h2>Total Deaths: {props.footerInfo}</h2>
+class Footer extends React.Component {
+  render() {
+    return (
+      <div className="section-footer">
+        <div className="footer">
+          <div className="footer-title">
+            <Characters />
+          </div>
+          <div className="footer-title">
+            <Episodes />
+          </div>
+          <div className="footer-title">
+            <Quotes />
+          </div>
+          <div className="footer-title">
+            <DeathCount />
+          </div>
         </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default Footer;

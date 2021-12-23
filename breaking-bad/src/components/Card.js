@@ -16,35 +16,35 @@ const Card = (props) => {
           </div>
 
           <div className="card-content">
-            <span className="date">{props.joinDate}</span>
+            <span className="occupation">Occupation: {props.occupation}</span>
           </div>
 
           <div className="card-info-grid">
             <div className="description">
               <div className="desc">
-                <h3>{props.movies}</h3>
-                <p>Movies</p>
+                <h5>{props.status}</h5>
+                <p>Status</p>
               </div>
             </div>
 
             <div className="description">
               <div className="desc">
-                <h3>{props.awards}</h3>
-                <p>Awards</p>
+                <h5>{props.birthday}</h5>
+                <p>Date of Birth</p>
               </div>
             </div>
 
             <div className="description">
               <div className="desc">
-                <h3>{props.shows}</h3>
-                <p>TV Shows</p>
+                <h5>{props.appearance}</h5>
+                <p>Appearance</p>
               </div>
             </div>
 
             <div className="description">
               <div className="desc">
-                <h3>{props.followers}</h3>
-                <p>Followers</p>
+                <h5>{props.portrayed}</h5>
+                <p>Portrayed by</p>
               </div>
             </div>
           </div>

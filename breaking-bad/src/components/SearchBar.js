@@ -1,21 +1,38 @@
 import React from "react";
 import Nav from "./Nav.css";
 
-const SearchBar = (props) => {
-  return (
-    <div className="main-segment">
-      <div className="breaking-bad-title">
-        <h1>{props.title}</h1>
-      </div>
+class SearchBar extends React.Component {
+  state = { term: "" };
 
-      <form className="ui form">
-        <div className="input-field">
-          <input type="text" placeholder={props.placeholder} />
-          <button type="submit">{props.formButton}</button>
+  onInputChange = (event) => {
+    this.setState({ term: event.target.value });
+  };
+
+  onFormSubmit = (event) => {
+    event.preventDefault();
+  };
+
+  render(props) {
+    return (
+      <div className="main-segment">
+        <div className="breaking-bad-title">
+          <h1>The Breaking Bad</h1>
         </div>
-      </form>
-    </div>
-  );
-};
+
+        <form onSubmit={this.onFormSubmit} className="ui form">
+          <div className="input-field">
+            <input
+              onChange={this.onInputChange}
+              value={this.state.term}
+              type="text"
+              placeholder="Search.."
+            />
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    );
+  }
+}
 
 export default SearchBar;
