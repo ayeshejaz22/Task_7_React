@@ -10,11 +10,7 @@ class Episodes extends React.Component {
     this.setState({ episodes: data.length });
   }
   render() {
-    return (
-      <div>
-        <h2>Episodes: {this.state.episodes} </h2>
-      </div>
-    );
+    return <h2>Episodes: {this.state.episodes} </h2>;
   }
 }
 

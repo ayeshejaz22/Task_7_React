@@ -2,33 +2,29 @@ import React from "react";
 import Navbar from "./Navbar";
 import SearchBar from "./SearchBar";
 import DisplayCard from "./DisplayCard";
-import Nav from "./Nav.css";
 import Logo from "./logo.png";
 import Footer from "./Footer";
+import { Container, Row, Col } from "react-dom";
 
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="container-xxl p-0">
         <Navbar logo={Logo} login="Login" />
 
-        <SearchBar />
-
-        <div className="grid-container-card">
-          <DisplayCard />
-          <DisplayCard />
-          <DisplayCard />
-          <DisplayCard />
+        <div className="container-xxl p-0 m-0 justify-content-center">
+          <SearchBar />
         </div>
 
-        <div className="grid-container-card">
-          <DisplayCard />
-          <DisplayCard />
-          <DisplayCard />
-          <DisplayCard />
-        </div>
+        <section className="section-cards py-3">
+          <div className="container-xxl">
+            <DisplayCard />
+          </div>
+        </section>
 
-        <Footer footerInfo="32" />
+        <div className="container-xxl p-0">
+          <Footer footerInfo="32" />
+        </div>
       </div>
     );
   }

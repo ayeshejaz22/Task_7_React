@@ -10,11 +10,7 @@ class Quotes extends React.Component {
     this.setState({ quotes: data.length });
   }
   render() {
-    return (
-      <div>
-        <h2>Quotes: {this.state.quotes} </h2>
-      </div>
-    );
+    return <h2>Quotes: {this.state.quotes} </h2>;
   }
 }
 

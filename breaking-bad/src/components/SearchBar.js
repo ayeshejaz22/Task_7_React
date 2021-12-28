@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "./Nav.css";
+import { Container, Row, Col } from "react-dom";
 
 class SearchBar extends React.Component {
   state = { term: "" };
@@ -19,7 +19,7 @@ class SearchBar extends React.Component {
           <h1>The Breaking Bad</h1>
         </div>
 
-        <form onSubmit={this.onFormSubmit} className="ui form">
+        <form onSubmit={this.onFormSubmit} className="ui form py-2">
           <div className="input-field">
             <input
               onChange={this.onInputChange}

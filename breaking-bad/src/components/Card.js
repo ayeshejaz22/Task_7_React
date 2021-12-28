@@ -1,15 +1,17 @@
 import React from "react";
-import Nav from "./Nav.css";
 
 const Card = (props) => {
   return (
-    <div className="main-cards">
-      <div className="ui card" style={{ width: "250px" }}>
-        <div className="cards">
+    <div className="col-8 col-sm-6 col-md-6 col-lg-4 col-xl-3 justify-content-center">
+      <div
+        className="card border-1 rounded shadow-sm my-1 mx-1 py-2 px-2 mb-5"
+        style={{ width: "280px", height: "400px" }}
+      >
+        <div className="card-body text-center py-4">
           <div className="card-image">
-            <img alt="Anna" src={props.cardImage}></img>
+            <img alt="img" src={props.cardImage}></img>
           </div>
-          <div className="card-header">
+          <div className="card-header bg-white">
             <a className="header" href="/">
               {props.cardTitle}
             </a>
@@ -20,30 +22,30 @@ const Card = (props) => {
           </div>
 
           <div className="card-info-grid">
-            <div className="description">
+            <div className="description p-2">
               <div className="desc">
-                <h5>{props.status}</h5>
+                <h6>{props.status}</h6>
                 <p>Status</p>
               </div>
             </div>
 
-            <div className="description">
+            <div className="description p-2">
               <div className="desc">
-                <h5>{props.birthday}</h5>
+                <h6>{props.birthday}</h6>
                 <p>Date of Birth</p>
               </div>
             </div>
 
-            <div className="description">
+            <div className="description p-2">
               <div className="desc">
-                <h5>{props.appearance}</h5>
+                <h6>{props.appearance}</h6>
                 <p>Appearance</p>
               </div>
             </div>
 
-            <div className="description">
+            <div className="description p-2">
               <div className="desc">
-                <h5>{props.portrayed}</h5>
+                <h6>{props.portrayed}</h6>
                 <p>Portrayed by</p>
               </div>
             </div>

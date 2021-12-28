@@ -10,11 +10,7 @@ class DeathCount extends React.Component {
     this.setState({ deaths: data[data.length - 1] });
   }
   render() {
-    return (
-      <div>
-        <h2>Total Deaths: {this.state.deaths.deathCount} </h2>
-      </div>
-    );
+    return <h2>Total Deaths: {this.state.deaths.deathCount} </h2>;
   }
 }
 

@@ -10,11 +10,7 @@ class Characters extends React.Component {
     this.setState({ characters: data.length });
   }
   render() {
-    return (
-      <div>
-        <h2>Characters: {this.state.characters} </h2>
-      </div>
-    );
+    return <h2>Characters: {this.state.characters} </h2>;
   }
 }
 
